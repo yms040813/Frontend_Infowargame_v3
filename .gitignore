@@ -135,8 +135,10 @@ dist/
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
+node_modules/
+
 # vuepress build output
-.vuepress/dist
+.vuepress/dis
 
 # Serverless directories
 .serverless/
@@ -175,6 +177,4 @@ sketch
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-
-# End of https://www.toptal.com/developers/gitignore/api/react,vscode,node,macos
 node_modules

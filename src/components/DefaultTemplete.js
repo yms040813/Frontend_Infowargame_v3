@@ -4,7 +4,7 @@ import MenuBarBox from "../components/common/MenuBarBox";
 
 const MenuBarStyled = styled.div`
   width: 303px;
-  height: 100vh;
+  height: calc(160px + 920px);
   background-color: #BCBCBC;
   border-bottom-right-radius: 40px;
 `;
@@ -30,7 +30,7 @@ const TopicAreaStyled = styled.div`
 const MainTopicStyled = styled.div`
   width: 291px;
   height: 56px;
-  background: #fff;
+  background-color: #fff;
   border-radius: 10px;
   margin-top: 7px;
 
@@ -40,8 +40,14 @@ const MainTopicStyled = styled.div`
   text-align: center;
   line-height: 51px;
 
+  transition: .1s;
+
   &:first-child{
     margin-top: 0;
+  }
+  &:hover{
+    background-color: #2c2c2c;
+    color: #fff;
   }
 `;
 const SubAreaStyled = styled.div`

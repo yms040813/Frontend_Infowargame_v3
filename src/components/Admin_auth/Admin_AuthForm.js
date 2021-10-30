@@ -3,15 +3,20 @@ import Button from "../common/Button";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Icon from "../../img/Icon.png";
+import App from "../../App.css";
 
 const AuthFormBlock = styled.div`
   h2 {
+    font-family: CookieRun;
+    font-style: normal;
     margin: 0;
     font-size: 40px;
+    line-height: 54px;
     color: white;
+
     margin-bottom: 1rem;
     position: absolute;
-    left: 71px;
+    left: 45px;
     top: 148px;
   }
 `;
@@ -28,7 +33,7 @@ const BlackBox = styled.div`
   h3 {
     background-color: #2c2c2c;
     color: white;
-
+    font-family: Noto Sans KR;
     position: absolute;
     font-weight: 500;
     line-height: 23px;
@@ -36,17 +41,6 @@ const BlackBox = styled.div`
     text-align: center;
     margin-top: 3px;
     margin-left: 35px;
-  }
-  h4 {
-    background-color: #2c2c2c;
-    color: white;
-    position: absolute;
-
-    font-weight: 500;
-    line-height: 23px;
-    font-size: 16px;
-
-    text-align: center;
   }
 
   position: absolute;
@@ -58,7 +52,7 @@ const BlackBox = styled.div`
   width: 455px;
   height: 669px;
 
-  @media (min-width: 900px) {
+  @media (max-width: 800px) {
     width: 380px;
     height: 580px;
   }
@@ -70,17 +64,18 @@ const BlackBox = styled.div`
 
 const StyledInput = styled.input`
   background-color: #2c2c2c;
-  line-height: 40px;
+  font-family: Noto Sans KR;
+  line-height: 34px;
   font-size: 1rem;
   outline: none;
   border: solid white;
   border-radius: 10px;
   text-indent: 1rem;
   margin-left: 1rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  width: 78%;
+  width: 72%;
   color: gray;
   &:focus {
     color: white;
@@ -91,21 +86,29 @@ const StyledInput = styled.input`
 `;
 
 const Area = styled.div`
-  margin-top: 20px;
+  margin-top: 15px;
+  padding-left: 2rem;
   position: absolute;
   top: 240px;
 `;
 
 const ButtonMarginTop = styled(Button)`
-  margin-top: 1rem;
+  margin-top: 3rem;
   margin-left: 1rem;
+  font-family: CookieRun;
+  color: #2c2c2c;
+  text-align: center;
+  font-size: 30px;
+  @media (max-width: 800px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 const IconBox = styled.div`
   background-image: url(${Icon});
   background-size: 100%;
   border-radius: 50%;
-  @media (min-width: 900px) {
+  @media (max-width: 800px) {
     margin-right: 1rem;
     margin-left: 12rem;
   }
@@ -128,16 +131,16 @@ const AuthForm = () => {
           <StyledInput
             autoComplete="e-mail"
             name="e-mail"
-            placeholder=" EMAIL을 입력해주세요"
+            placeholder=" EMAIL을 입력해주세요!"
           />
           <h3>PASSWORD</h3>
           <StyledInput
             autoComplete="password"
             name="password"
-            placeholder="비밀번호를 입력해주세요"
+            placeholder="비밀번호를 입력해주세요!"
             type="password"
           />
-          <ButtonMarginTop fullWidth>로그인</ButtonMarginTop>
+          <ButtonMarginTop fullWidth>LOGIN</ButtonMarginTop>
         </Area>
       </AuthFormBlock>
     </BlackBox>

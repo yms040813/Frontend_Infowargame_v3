@@ -1,5 +1,6 @@
 import React from "react";
 import AdminLoginPage from "../page/AdminLogin";
+import AdminUser from "../page/AdminUser";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 const LoggedInRoutes = () => (
@@ -17,7 +18,7 @@ const LoggedInRoutes = () => (
     <Route path="/notification" component={null} />{" "}
     {/*공지, 이벤트 작성 페이지 */}
     <Route path="/quest" component={null} /> {/*문제 관리 리스트 */}
-    <Route path="/users" component={null} /> {/*회원 관리 리스트 */}
+    <Route path="/users" component={AdminUser} /> {/*회원 관리 리스트 */}
     <Redirect from="*" to="/" /> {/*리다이렉션 */}
   </Switch>
 );
@@ -35,8 +36,10 @@ const LoggedOutRoutes = () => (
 );
 
 const AppRouter = ({ isLoggedIn }) => (
-  // isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />;
-  <LoggedOutRoutes />
+  //isLoggedIn ? <LoggedInRoutes /> : <LoggedOutRoutes />;
+  <div>
+    <LoggedInRoutes />
+  </div>
 );
 
 export default AppRouter;

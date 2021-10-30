@@ -5,9 +5,10 @@ const StyledButton = styled.button`
   border: none;
   border-radius: 10px;
   font-size: 30px;
+  line-height: 26px;
   font-weight: bold;
   padding: 0.25rem 1rem;
-  color: black;
+  color: #2c2c2c;
   outline: none;
   cursor: pointer;
 
@@ -21,7 +22,7 @@ const StyledButton = styled.button`
     css`
       padding-top: 0.75rem;
       padding-bottom: 0.75rem;
-      width: 80%;
+      width: 74%;
       font-size: 1.125rem;
     `};
 `;

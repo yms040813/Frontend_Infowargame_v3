@@ -82,7 +82,7 @@ const StyledInput = styled.input`
 const ContentInput = styled.div`
   position: absolute;
   width: calc(100% - 190px);
-  height: calc(100% - 300px);
+  height: calc(100% - 600px);
   left: 100px;
   top: 181px;
   font-size: 18px;
@@ -94,6 +94,7 @@ const ContentInput = styled.div`
   padding-top: 30px;
 
   text-align: top;
+  overflow: hidden;
 
   .ql-editor {
     padding: 0;
@@ -147,7 +148,39 @@ const ButtonStyled = styled(Button)`
   }
 `;
 
-const WriteNotice = () => {
+const SelectButton = styled(Button)`
+  position: absolute;
+  width: 161px;
+  height: 51px;
+  font-family: CookieRun;
+  top: 450px;
+  left: 100px;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 900px;
+  font-size: 20px;
+  line-height: 29px;
+
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  @media (max-width: 1100px) {
+    width: 100px;
+    height: 41px;
+    font-size: 15px;
+  }
+  @media (max-width: 890px) {
+    width: 80px;
+    font-size: 12px;
+    left: 40px;
+  }
+`;
+
+const WriteEvent = () => {
   const quillElement = useRef(null); //Quill을 적용할 DivElement 설정
   const quillInstance = useRef(null); //Quill 인스턴스 설정
 
@@ -179,8 +212,9 @@ const WriteNotice = () => {
       <h3>CONTENT</h3>
 
       <ButtonStyled>작성하기</ButtonStyled>
+      <SelectButton>SELECT FILE</SelectButton>
     </WhiteBox>
   );
 };
 
-export default WriteNotice;
+export default WriteEvent;

@@ -13,9 +13,9 @@ const DefaultTemplete = () => {
             
             <S.MainTopicStyled>CHALENGE</S.MainTopicStyled>
             <S.SubAreaStyled>
-              <S.SubTopicStyled>Pwnable</S.SubTopicStyled>
-              <S.SubTopicStyled>Reversing</S.SubTopicStyled>
-              <S.SubTopicStyled>Web</S.SubTopicStyled>
+              <div>Pwnable</div>
+              <div>Reversing</div>
+              <div>Web</div>
             </S.SubAreaStyled>
 
           </S.TopicAreaStyled>

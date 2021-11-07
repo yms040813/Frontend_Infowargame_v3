@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../common/Button";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
 import Icon from "../../img/Icon.png";
 import App from "../../App.css";
 

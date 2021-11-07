@@ -38,6 +38,7 @@ const WebTitleStyled = styled.div`
   height: 38px;
 
   font-family: "CookieRun";
+  font-style: normal;
   color: #2c2c2c;
   font-size: 28px;
   line-height: 38px;

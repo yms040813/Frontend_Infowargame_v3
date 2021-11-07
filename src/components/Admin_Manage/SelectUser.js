@@ -96,7 +96,7 @@ const BanButton = styled.div`
   border-radius: 10px;
   box-sizing: border-box;
   position: relative;
-
+  color: #2c2c2c;
   top: -45px;
   font-family: Noto Sans KR;
   font-weight: 900;
@@ -117,11 +117,12 @@ const BanButton = styled.div`
     margin-left: calc(100% - 60px);
     top: -37px;
   }
-  @media (max-width: 1060px) {
+  @media (max-width: 1120px) {
     width: 50px;
     margin-left: 0;
+
     left: 80px;
-    height: 35px;
+    height: 37px;
     font-size: 13px;
   }
   @media (max-width: 890px) {
@@ -138,7 +139,7 @@ const UserAlign = styled.div`
   margin-right: 0px;
   margin-left: 150px;
 
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   color: white;
   text-align: left;
 
@@ -155,11 +156,12 @@ const UserAlign = styled.div`
   @media (max-width: 1200px) {
     height: 35px;
     font-size: 20px;
+    margin-left: 120px;
     padding-top: 1px;
     padding-left: 20px;
   }
 
-  @media (max-width: 1060px) {
+  @media (max-width: 1100px) {
     font-size: 15px;
     margin-left: 100px;
     width: 100px;
@@ -173,10 +175,10 @@ const UserAlign = styled.div`
 const ScrollArea = styled.div`
   position: absolute;
   overflow-y: scroll;
-  width: calc(100% - 150px);
+  width: calc(100% - 220px);
   height: 600px;
   top: 140px;
-  background-color: red;
+  background-color: white;
   &::-webkit-scrollbar {
     width: 10px;
     background: #c4c4c4;

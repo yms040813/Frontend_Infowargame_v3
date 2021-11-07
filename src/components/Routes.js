@@ -1,6 +1,7 @@
 import React from "react";
 import AdminLoginPage from "../page/AdminLogin";
 import AdminUser from "../page/AdminUser";
+import AdminNotice from "../page/AdminNotice";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 const LoggedInRoutes = () => (
@@ -15,6 +16,8 @@ const LoggedInRoutes = () => (
     <Route path="/wargame" component={null} /> {/*wargame 페이지 */}
     <Route path="/wargame/:id" component={null} /> {/*wargame 문제사이트 */}
     <Route path="/administration" component={null} /> {/*admin 페이지 */}
+    <Route path="/adminnotice" component={AdminNotice} />{" "}
+    {/*admin 공지사항 페이지 */}
     <Route path="/notification" component={null} />{" "}
     {/*공지, 이벤트 작성 페이지 */}
     <Route path="/quest" component={null} /> {/*문제 관리 리스트 */}

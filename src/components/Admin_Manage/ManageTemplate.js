@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import MenuBarBox from "./MenuBarBox";
-import SelectUser from "./SelectUser";
 
 const MenuBarStyled = styled.div`
   width: 303px;
@@ -47,7 +46,6 @@ const MainTopicStyled = styled.div`
 const DefaultTemplete = () => {
   return (
     <MenuBarStyled>
-      <SelectUser />
       <MenuBarBox />
       <NavigatorAreaStyled>
         <MainTopicStyled>CHALENGE</MainTopicStyled>

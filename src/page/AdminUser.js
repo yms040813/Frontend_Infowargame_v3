@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import ManageTemplate from "../components/Admin_Manage/ManageTemplate";
 import styled from "styled-components";
+import SelectUser from "../components/Admin_Manage/SelectUser";
 
 const Background = styled.div`
   background-color: #2c2c2c;
@@ -10,19 +11,10 @@ const Background = styled.div`
 `;
 
 const AdminUser = () => {
-  const [users, setUsers] = useState([
-    {
-      id: 1,
-      name: "서건희",
-    },
-    {
-      id: 2,
-      name: "킹남대",
-    },
-  ]);
   return (
     <Background>
       <ManageTemplate />
+      <SelectUser />
     </Background>
   );
 };

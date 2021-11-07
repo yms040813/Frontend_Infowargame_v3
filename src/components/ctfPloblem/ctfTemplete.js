@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import DefaultTemplete from "../DefaultTemplete";
+import MenuBar from "../default/MenuBar";
+import ProblemBox from "./ProblemBox";
 
 const InnerStyled = styled.div`
   width: 1920px;
@@ -9,7 +10,8 @@ const InnerStyled = styled.div`
 `;
 const ProblemAreaStyled = styled.div`
   margin: 0;
-  padding: 0;
+  padding-top: 38px;
+  padding-left: 34px;
   width: 1445px;
   height: 996px;
   position: absolute;
@@ -20,6 +22,8 @@ const ProblemAreaStyled = styled.div`
   border: 3px solid black;
   border-radius: 30px;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 `;
 const ProblemTopicStyled = styled.div`
   position: absolute;
@@ -44,9 +48,10 @@ const ProblemTopicStyled = styled.div`
 const ctfTemplete = () => {
   return(
     <InnerStyled>
-      <DefaultTemplete />
+      <MenuBar />
       <ProblemAreaStyled>
         <ProblemTopicStyled>Pwnable</ProblemTopicStyled>
+        <ProblemBox />
       </ProblemAreaStyled>
     </InnerStyled>
   );

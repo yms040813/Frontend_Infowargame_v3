@@ -11,7 +11,7 @@ const DefaultTemplete = () => {
 
           <S.TopicAreaStyled>
             
-            <S.MainTopicStyled>CHALENGE</S.MainTopicStyled>
+            <S.LinkStyled to='/ctf'><div className="menuBar--menu">CHALENGE</div></S.LinkStyled>
             <S.SubAreaStyled>
               <div>Pwnable</div>
               <div>Reversing</div>
@@ -20,11 +20,11 @@ const DefaultTemplete = () => {
 
           </S.TopicAreaStyled>
 
-          <S.MainTopicStyled>NOTICE</S.MainTopicStyled>
-          <S.MainTopicStyled>EVENT</S.MainTopicStyled>
-          <S.MainTopicStyled>RANK</S.MainTopicStyled>
-          <S.MainTopicStyled>MYPAGE</S.MainTopicStyled>
-          <S.MainTopicStyled>DEVELOPER</S.MainTopicStyled>
+          <S.LinkStyled to='/notice'><div>NOTICE</div></S.LinkStyled>
+          <S.LinkStyled to='/notification'><div>EVENT</div></S.LinkStyled>
+          <S.LinkStyled to='/rank'><div>RANK</div></S.LinkStyled>
+          <S.LinkStyled to='/profile'><div>MYPAGE</div></S.LinkStyled>
+          <S.LinkStyled to='/developers'><div>DEVELOPER</div></S.LinkStyled>
           
         </S.NavigatorAreaStyled>
 

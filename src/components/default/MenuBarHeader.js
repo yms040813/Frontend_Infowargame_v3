@@ -6,14 +6,14 @@ const MenuBarHeader = () => {
     <S.HeaderStyled>
       <S.TitleAreaStyled>
         <S.MainLogoStyled />
-        <S.LinkStyled to="/">
+        <S.HeaderLinkStyled to="/">
           <S.TitleTextAreaStyled>
             <div>INFO</div>
             <div>WARGAME</div>
           </S.TitleTextAreaStyled>
-        </S.LinkStyled>
+        </S.HeaderLinkStyled>
       </S.TitleAreaStyled>
-      <S.LinkStyled to="/"><S.AccountButtonStyled>Logout</S.AccountButtonStyled></S.LinkStyled>
+      <S.HeaderLinkStyled to="/"><S.AccountButtonStyled>Logout</S.AccountButtonStyled></S.HeaderLinkStyled>
     </S.HeaderStyled>
   );
 };

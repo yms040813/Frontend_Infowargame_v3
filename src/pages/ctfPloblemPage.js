@@ -1,9 +1,12 @@
 import React from "react";
-import CtfTemplete from "../components/ctfPloblem/ctfTemplete";
+import CtfTemplete from "../components/ctfPloblem/CtfTemplete";
+import CtfProviders from "../providers/CtfProviders";
 
 const ctfPloblemPage = () => {
   return(
-    <CtfTemplete />
+    <CtfProviders>
+      <CtfTemplete />
+    </CtfProviders>
   );
 };
 

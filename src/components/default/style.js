@@ -1,8 +1,34 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const LinkStyled = styled(Link)`
+export const HeaderLinkStyled = styled(Link)`
   text-decoration: none;
+`
+
+export const LinkStyled = styled(HeaderLinkStyled)`
+  width: 291px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 7px;
+
+  color: #2c2c2c;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 51px;
+
+  transition: .1s;
+
+  display: block;
+
+  &:first-child{
+    margin-top: 0;
+  }
+  &:hover{
+    background-color: #2c2c2c;
+    color: #fff;
+  }
 `
 
 // In the menu bar, the area where the logo and logout button are located.
@@ -93,31 +119,6 @@ export const TopicAreaStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-// 
-export const MainTopicStyled = styled.div`
-  width: 291px;
-  height: 56px;
-  background-color: #fff;
-  border-radius: 10px;
-  margin-top: 7px;
-
-  color: #2c2c2c;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 51px;
-
-  transition: .1s;
-
-  &:first-child{
-    margin-top: 0;
-  }
-  &:hover{
-    background-color: #2c2c2c;
-    color: #fff;
-  }
 `;
 
 // 

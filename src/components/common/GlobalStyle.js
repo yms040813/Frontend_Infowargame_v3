@@ -32,6 +32,11 @@ const GlobalStyle = createGlobalStyle`
   body{
     font-family: 'Noto Sans KR', sans-serif;
   }
+  .inner-style {
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+  }
 `
 
 export default GlobalStyle

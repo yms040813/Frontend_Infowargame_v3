@@ -8,7 +8,7 @@ const CtfTemplete = () => {
   const problems = useCtfProblems()
 
   return(
-    <S.InnerStyled>
+    <div className="inner-style">
       <MenuBar />
       <S.ProblemAreaStyled>
         <S.ProblemTopicStyled>Pwnable</S.ProblemTopicStyled>
@@ -19,7 +19,7 @@ const CtfTemplete = () => {
           )
         })}
       </S.ProblemAreaStyled>
-    </S.InnerStyled>
+    </div>
   );
 };
 

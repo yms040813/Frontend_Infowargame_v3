@@ -45,12 +45,6 @@ export const QuestScoreStyled = styled.div`
   align-items: center;
 `;
 
-export const InnerStyled = styled.div`
-  width: 1920px;
-  margin: 0 auto;
-  position: relative;
-`;
-
 export const ProblemAreaStyled = styled.div`
   margin: 0;
   padding-top: 38px;

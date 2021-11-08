@@ -3,6 +3,7 @@ import AdminLoginPage from "../page/AdminLogin";
 import AdminUser from "../page/AdminUser";
 import AdminNotice from "../page/AdminNotice";
 import AdminEvent from "../page/AdminEvent";
+import AdminProblemW from "../page/AdminProblemW";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 const LoggedInRoutes = () => (
@@ -23,6 +24,8 @@ const LoggedInRoutes = () => (
     {/*공지, 이벤트 작성 페이지 */}
     <Route path="/adminevent" component={AdminEvent} />
     <Route path="/quest" component={null} /> {/*문제 관리 리스트 */}
+    <Route path="/writequest" component={AdminProblemW} />
+    {/*문제 작성 페이지 */}
     <Route path="/users" component={AdminUser} /> {/*회원 관리 리스트 */}
     <Redirect from="*" to="/" /> {/*리다이렉션 */}
   </Switch>

@@ -13,3 +13,5 @@
     <UPDATE> 코드를 수정함으로써 기능에 변함이 생겼을때
     <DELETE> 파일을 삭제하였을때
 
+## Page Global Style
+    <div className="inner-style></div>

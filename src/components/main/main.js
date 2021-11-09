@@ -1,12 +1,13 @@
 import React from "react";
 import * as S from './style';
-import DefaultTemplete from "../DefaultTemplete";
+import MenuBar from '../default/MenuBar'
 
 const MainTemplete = () => {
 
     return(
       <>
-        <DefaultTemplete />
+      <div className="inner-style">
+        <MenuBar/>
         <S.Event>Event</S.Event>
         <S.Banner />
         <S.Notice>NOTICE</S.Notice>
@@ -16,6 +17,7 @@ const MainTemplete = () => {
         <S.List4 />
         <S.List5 />
         <S.List6 />
+      </div>
       </>
     );
   };

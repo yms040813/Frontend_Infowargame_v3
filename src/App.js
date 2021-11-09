@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { HashRouter as Router } from 'react-router-dom';
 import Routes from './components/Routes';
+import GlobalStyle from './components/common/GlobalStyle';
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <>
+        <GlobalStyle />
         {isLoggedIn && null} { /* 헤더 들어갈 자리 */ }
         <Wrapper>
           <Routes isLoggedIn={isLoggedIn} />

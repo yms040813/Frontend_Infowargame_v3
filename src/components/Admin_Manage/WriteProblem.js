@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import styled from "styled-components";
-//import Button from "../common/Button";
+import FileUpload from "../common/FileUpload";
 import Quill from "quill";
 import "quill/dist/quill.bubble.css";
 
@@ -81,30 +81,59 @@ const StyledInput = styled.input`
 
 const FlagStyle = styled.input`
   position: absolute;
-  width: calc(100% - 600px);
+  width: 500px;
   height: 51px;
   left: 100px;
-  top: 550px;
+  top: 600px;
   font-size: 18px;
   padding-left: 20px;
   background-color: #fff;
   border: 1px solid #000;
   box-sizing: border-box;
   border-radius: 10px;
+  @media (max-width: 1700px) {
+    top: 580px;
+  }
   @media (max-width: 1100px) {
-    font-size: 10px;
-    width: 180px;
+    font-size: 13px;
+    width: 300px;
     height: 41px;
   }
   @media (max-width: 890px) {
     left: 40px;
-    width: 180px;
   }
 `;
+
+const ScoreStyle = styled.input`
+  position: absolute;
+  width: 500px;
+  height: 51px;
+  left: 700px;
+  top: 600px;
+  font-size: 18px;
+  padding-left: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  @media (max-width: 1700px) {
+    left: 100px;
+    top: 650px;
+  }
+  @media (max-width: 1100px) {
+    font-size: 13px;
+    width: 300px;
+    height: 41px;
+  }
+  @media (max-width: 890px) {
+    left: 40px;
+  }
+`;
+
 const ContentInput = styled.div`
   position: absolute;
   width: calc(100% - 190px);
-  height: calc(100% - 600px);
+  height: calc(100% - 540px);
   left: 100px;
   top: 250px;
   font-size: 18px;
@@ -458,7 +487,9 @@ const WriteProblem = () => {
         <div ref={quillElement} />
       </ContentInput>
       <h3>CONTENT</h3>
-      <FlagStyle name="flag" placeholder="FLAG를 입력해주세요" />
+      <FlagStyle name="flag" placeholder="FLAG 를 입력해주세요" />
+      <ScoreStyle name="score" placeholder="SCORE 를 입력해주세요" />
+      <FileUpload />
     </WhiteBox>
   );
 };

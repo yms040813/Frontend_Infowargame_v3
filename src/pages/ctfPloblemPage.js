@@ -1,5 +1,5 @@
 import React from "react";
-import CtfTemplete from "../components/ctfPloblem/CtfTemplete";
+import CtfTemplete from "../components/ctfPloblem/ctfTemplete"
 import CtfProviders from "../providers/CtfProviders";
 
 const ctfPloblemPage = () => {

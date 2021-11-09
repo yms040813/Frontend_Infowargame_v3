@@ -54,6 +54,76 @@ const WhiteBox = styled.div`
       left: 50px;
     }
   }
+  h4 {
+    background-color: white;
+
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 555px;
+    left: 120px;
+    font-family: Noto Sans KR;
+    font-size: 22px;
+    @media (max-width: 1700px) {
+      font-size: 18px;
+      top: 540px;
+    }
+    @media (max-width: 1100px) {
+      top: 550px;
+      font-size: 14px;
+    }
+    @media (max-width: 890px) {
+      left: 50px;
+    }
+  }
+  h5 {
+    background-color: white;
+
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 545px;
+    left: 720px;
+    font-family: Noto Sans KR;
+    font-size: 23px;
+    @media (max-width: 1700px) {
+      font-size: 18px;
+      top: 605px;
+      left: 120px;
+    }
+    @media (max-width: 1100px) {
+      left: 120px;
+      top: 615px;
+      font-size: 14px;
+    }
+    @media (max-width: 890px) {
+      left: 50px;
+    }
+  }
+  h6 {
+    background-color: white;
+
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 640px;
+    left: 320px;
+    font-family: Noto Sans KR;
+    font-size: 19px;
+    @media (max-width: 1700px) {
+      font-size: 18px;
+      top: 675px;
+      left: 310px;
+    }
+    @media (max-width: 1100px) {
+      left: 260px;
+      top: 686px;
+      font-size: 14px;
+    }
+    @media (max-width: 890px) {
+      left: 180px;
+    }
+  }
 `;
 
 const StyledInput = styled.input`
@@ -488,8 +558,11 @@ const WriteProblem = () => {
       </ContentInput>
       <h3>CONTENT</h3>
       <FlagStyle name="flag" placeholder="FLAG 를 입력해주세요" />
+      <h4>FLAG</h4>
       <ScoreStyle name="score" placeholder="SCORE 를 입력해주세요" />
+      <h5>SCORE</h5>
       <FileUpload />
+      <h6>FILES</h6>
     </WhiteBox>
   );
 };

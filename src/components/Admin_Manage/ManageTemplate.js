@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import MenuBarBox from "./MenuBarBox";
+import { Link } from "react-router-dom";
 
 const MenuBarStyled = styled.div`
   width: 303px;

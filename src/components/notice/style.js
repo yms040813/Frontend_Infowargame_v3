@@ -42,7 +42,6 @@ background-color: #2C2C2C;
 border-radius: 20px;
 display: flex;
 
-font-family: Noto Sans Linear B;
 font-size: 27px;
 line-height: 37px;
 color: #FFFFFF;
@@ -57,11 +56,17 @@ export const NoticeAreaStyled = styled.div`
   width: 698x;
   height: 860px;
   position: absolute;
-  top: 113px;
-  right: 97px;
-  bottom: 37px;
-  left: 1095px;
+  top: 60px;
+  right: 24px;
+  bottom: 60px;
+  left: 723px;
   border: 3px solid black;
   border-radius: 30px;
   box-sizing: border-box;
+`;
+export const NoNoticeTextStyled = styled.div`
+  text-align: center;
+  font-size: 27px;
+  line-height: 39px;
+  margin-top: 397px;
 `;

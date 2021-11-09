@@ -5,11 +5,9 @@ const TitleBoxStyled = styled.div`
   width: 303px;
   height: 160px;
   background-color: #2c2c2c;
-
   display: flex;
   padding: 29px 12px 11px 16px;
   box-sizing: border-box;
-
   position: relative;
 `;
 const TitleLogoStyled = styled.div`

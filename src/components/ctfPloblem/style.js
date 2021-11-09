@@ -9,9 +9,11 @@ export const QuestBoxStyled = styled.div`
   margin: 0 35px 33px 0;
   box-sizing: border-box;
   position: relative;
+
+  cursor: pointer;
 `;
 
-export const QuestTextStyled = styled.span`
+export const QuestTextStyled = styled.div`
   font-size: 27px;
   color: white;
   position: absolute;
@@ -50,7 +52,7 @@ export const ProblemAreaStyled = styled.div`
   padding-top: 38px;
   padding-left: 34px;
   width: 1445px;
-  height: 996px;
+  height: calc(100vh - 80px);
   position: absolute;
   top: 47px;
   right: 97px;
@@ -61,6 +63,7 @@ export const ProblemAreaStyled = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  align-content: start;
 `;
 
 export const ProblemTopicStyled = styled.div`

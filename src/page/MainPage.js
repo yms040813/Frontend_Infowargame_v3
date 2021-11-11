@@ -2,9 +2,7 @@ import React from "react";
 import MainTemplete from "../components/main/main";
 
 const MainPage = () => {
-  return(
-    <MainTemplete />
-  );
+  return <MainTemplete />;
 };
 
 export default MainPage;

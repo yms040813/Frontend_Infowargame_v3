@@ -85,3 +85,16 @@ export const ProblemTopicStyled = styled.div`
 
   color: #2C2C2C;
 `;
+
+export const CtfDetailAreaStyled = styled.div`
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100vh; 
+  z-index: 2;
+  background-color: white;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+`

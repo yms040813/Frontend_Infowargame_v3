@@ -5,7 +5,7 @@ import CtfProviders from "../providers/CtfProviders";
 const ctfPloblemPage = ({match}) => {
   return(
     <CtfProviders>
-      <CtfTemplete paramsId={match.params.id}/>
+      <CtfTemplete id={match.params.id}/>
     </CtfProviders>
   );
 };

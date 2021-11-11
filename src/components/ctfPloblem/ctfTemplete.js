@@ -1,13 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import MenuBar from "../default/MenuBar";
 import ProblemBox from "./ProblemBox";
-import * as S from './style'
 import useCtfProblems from "../../hooks/useCtfProblems";
-import { Link } from 'react-router-dom'
+import CtfDetailQ from "./CtfDetailQ";
+import * as S from './style'
 
-const CtfTemplete = (paramsId) => {
+const CtfTemplete = (params) => {
   const problems = useCtfProblems()
-  console.log(paramsId)
   return(
     <div className="inner-style">
       <MenuBar />
@@ -15,13 +15,10 @@ const CtfTemplete = (paramsId) => {
         <S.ProblemTopicStyled>Pwnable</S.ProblemTopicStyled>
         {problems.map(problem => {
           const {id, title, score} = problem
-          return(
-            <>
-            <Link to={`/ctf/${id}`}><ProblemBox title={title} score={score} /></Link>
-            </>
-          )
+          return(<Link to={`/ctf/${id}`}><ProblemBox title={title} score={score} /></Link>)
         })}
       </S.ProblemAreaStyled>
+      { params.id ? <CtfDetailQ /> : null }
     </div>
   );
 };

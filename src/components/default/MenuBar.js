@@ -21,7 +21,7 @@ const DefaultTemplete = () => {
         </S.TopicAreaStyled>
 
         <S.LinkStyled to='/notice'><div>NOTICE</div></S.LinkStyled>
-        <S.LinkStyled to='/notification'><div>EVENT</div></S.LinkStyled>
+        <S.LinkStyled to='/event'><div>EVENT</div></S.LinkStyled>
         <S.LinkStyled to='/rank'><div>RANK</div></S.LinkStyled>
         <S.LinkStyled to='/profile'><div>MYPAGE</div></S.LinkStyled>
         <S.LinkStyled to='/developers'><div>DEVELOPER</div></S.LinkStyled>

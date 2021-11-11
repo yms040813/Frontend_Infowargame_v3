@@ -3,7 +3,8 @@
 ## *__INFO X LAPIO__*
 
 ### 개발일정 
-    - 올해안에 끝나길..
+    2021년 4월 14일 ~ 2021년 6월 14일 (약 2달간)
+    - 작업 상황에따라 단축될 수 있음.
 
 ## Commit Message
     <ADD>    파일을 추가하였을때
@@ -12,3 +13,5 @@
     <UPDATE> 코드를 수정함으로써 기능에 변함이 생겼을때
     <DELETE> 파일을 삭제하였을때
 
+## Page Global Style
+    <div className="inner-style></div>

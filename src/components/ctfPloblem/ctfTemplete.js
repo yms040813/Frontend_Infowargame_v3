@@ -18,7 +18,7 @@ const CtfTemplete = (params) => {
           return(<Link to={`/ctf/${id}`}><ProblemBox title={title} score={score} /></Link>)
         })}
       </S.ProblemAreaStyled>
-      { params.id ? <CtfDetailQ /> : null }
+      { params.id ? <CtfDetailQ id={params.id}/> : null }
     </div>
   );
 };

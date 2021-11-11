@@ -96,5 +96,21 @@ export const CtfDetailAreaStyled = styled.div`
   background-color: white;
 
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(5px);
+`
+
+export const CtfProblemStyled = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 616px;
+  height: 826px;
+  background-color: white;
+  border: 5px solid #000000;
+  box-sizing: border-box;
+  border-radius: 40px;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `

@@ -6,7 +6,6 @@ import WriteNotice from "../../components/Admin_Manage/WriteNotice";
 const Background = styled.div`
   background-color: #2c2c2c;
   background-size: cover;
-  width: auto;
   margin: 0 0 0 0;
 `;
 

@@ -17,6 +17,7 @@ const WhiteBox = styled.div`
   @media (max-width: 830px) {
     width: 350px;
   }
+
   h2 {
     background-color: white;
 

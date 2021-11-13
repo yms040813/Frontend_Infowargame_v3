@@ -3,7 +3,7 @@ import CtfTemplete from "../components/ctfPloblem/ctfTemplete";
 import CtfProviders from "../providers/CtfProviders";
 
 const ctfPloblemPage = () => {
-  return(
+  return (
     <CtfProviders>
       <CtfTemplete />
     </CtfProviders>

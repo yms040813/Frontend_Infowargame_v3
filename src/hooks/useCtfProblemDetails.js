@@ -2,7 +2,7 @@ import { useContext } from "react";
 import CtfContext from "../context/CtfContext";
 
 export default function useCtfProblemDetails() {
-  const { problemDetails } = useContext(CtfContext);
+  const { pwnableProblemDetails, reversingProblemDetails, webProblemDetails } = useContext(CtfContext);
 
-  return problemDetails;
+  return { pwnableProblemDetails, reversingProblemDetails, webProblemDetails };
 }

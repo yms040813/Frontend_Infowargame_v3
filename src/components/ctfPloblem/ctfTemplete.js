@@ -7,7 +7,7 @@ import CtfDetailQ from "./CtfDetailQ";
 import * as S from './style'
 
 const CtfTemplete = (match) => {
-  const problems = useCtfProblems()
+  const { pwnableProblems, reversingProblems, webProblems } = useCtfProblems()
 
   let subMenu
   switch (match.id.params.id) {
@@ -20,6 +20,14 @@ const CtfTemplete = (match) => {
   let pageName = match.id.url.slice(5)
   pageName = subMenu === "id" ? pageName.slice(0, -2) : pageName
 
+  let problems
+  switch (pageName) {
+    case 'pwnable': problems = pwnableProblems; break
+    case 'reversing': problems = reversingProblems; break;
+    case 'web': problems = webProblems; break
+    default: problems = pwnableProblems
+  }
+
   return(
     <div className="inner-style">
       <MenuBar />
@@ -30,7 +38,7 @@ const CtfTemplete = (match) => {
           return(<Link to={`/ctf/${subMenu}/${id}`}><ProblemBox title={title} score={score} /></Link>)
         })}
       </S.ProblemAreaStyled>
-      { !Number.isNaN(Number(match.id.params.id)) ? <CtfDetailQ id={match.id.params.id}/> : null }
+      { !Number.isNaN(Number(match.id.params.id)) ? <CtfDetailQ id={match.id.params.id} page={pageName}/> : null }
     </div>
   );
 };

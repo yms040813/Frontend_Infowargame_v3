@@ -2,7 +2,17 @@ import useCtfProblemDetails from '../../hooks/useCtfProblemDetails'
 import * as S from './style'
 
 const CtfDetailQ = (params) => {
-  const problemDetails = useCtfProblemDetails()
+  console.log(params)
+  const {pwnableProblemDetails, reversingProblemDetails, webProblemDetails} = useCtfProblemDetails()
+
+  let problemDetails
+  switch (params.page) {
+    case 'pwnable': problemDetails = pwnableProblemDetails; break
+    case 'reversing': problemDetails = reversingProblemDetails; break;
+    case 'web': problemDetails = webProblemDetails; break
+    default: problemDetails = pwnableProblemDetails
+  }
+
   const problemDt = problemDetails.find(problemDetail => problemDetail.id === params.id)
 
   return (

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import CtfContext from '../context/CtfContext'
 
 const CtfProviders = ({children}) => {
-  const [problems, setProblems] = useState([
+  const [pwnableProblems, setPwnableProblems] = useState([
     {
       id: '1',
       title: "버퍼 오버플로우 1",
@@ -35,7 +35,7 @@ const CtfProviders = ({children}) => {
     },
   ])
 
-  const [problemDetails, setProblemDetails] = useState([
+  const [pwnableProblemDetails, setPwnableProblemDetails] = useState([
     {
       id: '1',
       title: "버퍼 오버플로우 1",
@@ -74,7 +74,41 @@ const CtfProviders = ({children}) => {
     }
   ])
 
-  return (<CtfContext.Provider value={{problems, problemDetails}}>
+  const [reversingProblems, setReversingProblems] = useState([
+    {
+      id: '1',
+      title: "리버싱 문제 1",
+      score: 10
+    },
+  ])
+
+  const [reversingProblemDetails, setReversingProblemDetails] = useState([
+    {
+      id: '1',
+      title: "리버싱 문제 1",
+      content: "영주는 치즈돈가스1을 싫어해 영주는 치즈돈가스1을 싫어해 영주는 치즈돈가스1을 싫어해 영주는 치즈돈가스1을 싫어해 영주는 치즈돈가스1을 싫어해 영주는 치즈돈가스1을 싫어해",
+      frag : '123456'
+    },
+  ])
+
+  const [webProblems, setWebProblems] = useState([
+    {
+      id: '1',
+      title: "웹 문제 1",
+      score: 10
+    },
+  ])
+
+  const [webProblemDetails, setWebProblemDetails] = useState([
+    {
+      id: '1',
+      title: "웹 문제 1",
+      content: "영주는 피자1을 싫어해 영주는 피자1을 싫어해 영주는 피자1을 싫어해 영주는 피자1을 싫어해 영주는 피자1을 싫어해 영주는 피자1을 싫어해",
+      frag : '123456'
+    },
+  ])
+
+  return (<CtfContext.Provider value={{pwnableProblems, reversingProblems, webProblems, pwnableProblemDetails, reversingProblemDetails, webProblemDetails}}>
     {children}
   </CtfContext.Provider>)
 }

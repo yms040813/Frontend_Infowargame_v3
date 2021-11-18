@@ -15,10 +15,10 @@ const CtfTemplete = (params) => {
         <S.ProblemTopicStyled>Pwnable</S.ProblemTopicStyled>
         {problems.map(problem => {
           const {id, title, score} = problem
-          return(<Link to={`/ctf/${id}`}><ProblemBox title={title} score={score} /></Link>)
+          return(<Link to={`/ctf/pwnable/${id}`}><ProblemBox title={title} score={score} /></Link>)
         })}
       </S.ProblemAreaStyled>
-      { params.id ? <CtfDetailQ id={params.id}/> : null }
+      { !Number.isNaN(Number(params.id)) ? <CtfDetailQ id={params.id}/> : null }
     </div>
   );
 };

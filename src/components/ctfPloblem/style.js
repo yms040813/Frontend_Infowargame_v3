@@ -114,3 +114,68 @@ export const CtfProblemStyled = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 `
+
+export const ContentStyled = styled.div`
+  margin: 81px 59px;
+  color: #000000;
+
+  .title {
+    font-size: 35px;
+    line-height: 48px;
+    margin-bottom: 43px;
+  }
+  .content {
+    font-size: 20px;
+    line-height: 27px;
+  }
+`
+
+export const ButtonAreaStyled = styled.div`
+  height: 255px;
+  width: 506px;
+  margin-bottom: 66px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  input {
+    position: absolute;
+    width: 506px;
+    height: 51px;
+
+    padding-left: 27px;
+
+    bottom: 102px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: white;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #9B9B9B;
+  }
+
+  .submitButton {
+    position: absolute;
+    width: 187px;
+    height: 52px;
+    background: #2C2C2C;
+    border-radius: 10px;
+    border: 0;
+
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: pointer;
+    color: white;
+    font-size: 27px;
+  }
+`

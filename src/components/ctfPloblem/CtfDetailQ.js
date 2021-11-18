@@ -8,9 +8,14 @@ const CtfDetailQ = (params) => {
   return (
     <S.CtfDetailAreaStyled>
       <S.CtfProblemStyled>
-        {problemDt.title}
-        <br />
-        {problemDt.context}
+        <S.ContentStyled>
+          <div className="title">{problemDt.title}</div>
+          <div className='content'>{problemDt.content}</div>
+        </S.ContentStyled>
+        <S.ButtonAreaStyled>
+          <input placeholder="INFO CTF{} 을 입력해주세요"/>
+          <button className="submitButton">SUBMIT</button>
+        </S.ButtonAreaStyled>
       </S.CtfProblemStyled>
     </S.CtfDetailAreaStyled>
   )

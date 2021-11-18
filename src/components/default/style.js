@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const HeaderLinkStyled = styled(Link)`
+export const DefaultLinkStyled = styled(Link)`
   text-decoration: none;
 `
 
-export const LinkStyled = styled(HeaderLinkStyled)`
+export const LinkStyled = styled(DefaultLinkStyled)`
   width: 291px;
   height: 56px;
   background-color: #fff;

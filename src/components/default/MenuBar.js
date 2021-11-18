@@ -13,9 +13,9 @@ const DefaultTemplete = () => {
           
           <S.LinkStyled to='/ctf/pwnable'><div className="menuBar--menu">CHALENGE</div></S.LinkStyled>
           <S.SubAreaStyled>
-            <div>Pwnable</div>
-            <div>Reversing</div>
-            <div>Web</div>
+            <S.DefaultLinkStyled to='/ctf/pwnable'><div>Pwnable</div></S.DefaultLinkStyled>
+            <S.DefaultLinkStyled to='/ctf/reversing'><div>Reversing</div></S.DefaultLinkStyled>
+            <S.DefaultLinkStyled to='/ctf/web'><div>Web</div></S.DefaultLinkStyled>
           </S.SubAreaStyled>
 
         </S.TopicAreaStyled>

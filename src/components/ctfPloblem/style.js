@@ -68,9 +68,10 @@ export const ProblemAreaStyled = styled.div`
 
 export const ProblemTopicStyled = styled.div`
   position: absolute;
-  width: 178px;
+  padding: 0 10px;
+  width: auto;
   height: 58px;
-  left: 22px;
+  left: 24px;
   top: -32px;
   background-color: #fff;
   z-index: 1;

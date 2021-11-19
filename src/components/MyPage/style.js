@@ -50,16 +50,27 @@ export const PersonalInfoStyled = styled(InfoNameStyled)`
   }
 `
 
+export const DtInfoAreaStyled = styled.div`
+  position: absolute;
+  width: 1441px;
+  height: 449px;
+  bottom: 0;
+  right: 114px;
+`
+
 export const InfoChangeButtonStyled = styled.button`
   position: absolute;
   width: 165px;
   height: 36px;
-  top: 461px;
-  right: 114px;
+  top: 0;
+  right: 0;
   color: white;
 
   background: #2C2C2C;
   border-radius: 10px;
+  border: 0;
+
+  cursor: pointer;
 `
 
 export const DetailInfoStyled = styled.div`
@@ -67,11 +78,10 @@ export const DetailInfoStyled = styled.div`
   height: 398px;
   background-color: #2c2c2c;
   position: absolute;
-  left: 62px;
-  bottom: 50px;
+  bottom: 0px;
   border-radius: 20px;
 
   &:last-child {
-    left: 817px;
+    right: 0px;
   }
 `

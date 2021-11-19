@@ -22,5 +22,5 @@
 <MenuBar page={pageName}/>
 
 // If you don't know what pagename is, 
-// refer to ctfTemple.js and MenuBar.js.
+// refer to ctfTemple.js, MyPageTemplete.js and MenuBar.js.
 ```

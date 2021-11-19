@@ -9,7 +9,7 @@ const MyPageTemplete = () => {
 
   return (
     <div className="inner-style">
-      <MenuBar />
+      <MenuBar page="profile"/>
       <S.MyPageAreaStyled>
         <S.PageTitleStyled>MYPAGE</S.PageTitleStyled>
         <S.InfoNameStyled>
@@ -20,9 +20,13 @@ const MyPageTemplete = () => {
           <div>{name}</div>
           <div>{email}</div>
         </S.PersonalInfoStyled>
-        <S.InfoChangeButtonStyled>유저 정보 변경</S.InfoChangeButtonStyled>
-        <S.DetailInfoStyled />
-        <S.DetailInfoStyled />
+
+        <S.DtInfoAreaStyled>
+          <S.InfoChangeButtonStyled>유저 정보 변경</S.InfoChangeButtonStyled>
+          <S.DetailInfoStyled />
+          <S.DetailInfoStyled />
+        </S.DtInfoAreaStyled>
+
       </S.MyPageAreaStyled>
     </div>
   )

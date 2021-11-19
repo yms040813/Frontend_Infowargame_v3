@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-export const sted = "white";
-
 export const WhiteBox = styled.div`
-  background-color: ${sted};
+  background-color: white;
   width: calc(100% - 440px);
   height: 840px;
   top: 120px;
@@ -305,7 +303,11 @@ export const ButtonP = styled.button`
   }
   &:hover {
     background-color: #818181;
-    border: 1px solid #818181;
+    border: 2px solid #818181;
+  }
+  &:focus {
+    background-color: white;
+    color: #2c2c2c;
   }
 `;
 
@@ -349,6 +351,10 @@ export const ButtonC = styled.button`
     background-color: #818181;
     border: 1px solid #818181;
   }
+  &:focus {
+    background-color: white;
+    color: #2c2c2c;
+  }
 `;
 
 export const ButtonR = styled.button`
@@ -391,6 +397,11 @@ export const ButtonR = styled.button`
     background-color: #818181;
     border: 1px solid #818181;
   }
+
+  &:focus {
+    background-color: white;
+    color: #2c2c2c;
+  }
 `;
 
 export const ButtonW = styled.button`
@@ -431,6 +442,11 @@ export const ButtonW = styled.button`
   &:hover {
     background-color: #818181;
     border: 1px solid #818181;
+  }
+
+  &:focus {
+    background-color: white;
+    color: #2c2c2c;
   }
 `;
 
@@ -474,6 +490,11 @@ export const ButtonF = styled.button`
     background-color: #818181;
     border: 1px solid #818181;
   }
+
+  &:focus {
+    background-color: white;
+    color: #2c2c2c;
+  }
 `;
 
 export const ButtonM = styled.button`
@@ -514,5 +535,9 @@ export const ButtonM = styled.button`
   &:hover {
     background-color: #818181;
     border: 1px solid #818181;
+  }
+  &:focus {
+    background-color: white;
+    color: #2c2c2c;
   }
 `;

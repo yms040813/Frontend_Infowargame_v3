@@ -15,3 +15,12 @@
 
 ## Page Global Style
     <div className="inner-style></div>
+
+## Use MenuBar in PageTemplete
+``` javascript
+// PageTemplete.js
+<MenuBar page={pageName}/>
+
+// If you don't know what pagename is, 
+// refer to ctfTemple.js and MenuBar.js.
+```

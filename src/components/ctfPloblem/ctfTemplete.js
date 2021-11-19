@@ -30,7 +30,7 @@ const CtfTemplete = (match) => {
 
   return(
     <div className="inner-style">
-      <MenuBar />
+      <MenuBar page={pageName}/>
       <S.ProblemAreaStyled>
         <S.ProblemTopicStyled>{pageName[0].toUpperCase() + pageName.slice(1)}</S.ProblemTopicStyled>
         {problems.map(problem => {

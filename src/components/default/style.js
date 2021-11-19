@@ -25,9 +25,20 @@ export const LinkStyled = styled(DefaultLinkStyled)`
   &:first-child{
     margin-top: 0;
   }
-  &:hover{
+
+  div {
+    border-radius: 10px;
+    height: 56px;
+  }
+
+  .btn__black, .btn__white:hover{
     background-color: #2c2c2c;
     color: #fff;
+  }
+
+  .btn__white, .btn__black:hover{
+    background-color: #fff;
+    color: #2c2c2c;
   }
 `
 
@@ -137,5 +148,15 @@ export const SubAreaStyled = styled.div`
     font-weight: 500;
     text-align: center;
     line-height: 51px;
+  }
+
+  .btn__black, .btn__white:hover{
+    background-color: #2c2c2c;
+    color: #fff;
+  }
+
+  .btn__white, .btn__black:hover{
+    background-color: #fff;
+    color: #2c2c2c;
   }
 `;

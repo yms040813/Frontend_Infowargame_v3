@@ -1,7 +1,7 @@
 import React from "react";
 import ManageTemplate from "../../components/Admin_Manage/ManageTemplate";
 import styled from "styled-components";
-import WriteProblem from "../../components/Admin_Manage/WriteProblem";
+import WriteProblem from "../../components/Admin_Manage/Admin_WriteProblem/WriteProblem";
 
 const Background = styled.div`
   background-color: #2c2c2c;

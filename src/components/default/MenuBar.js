@@ -13,7 +13,7 @@ const DefaultTemplete = (params) => {
     case 'profile': mainTopic = 'mypage'; break
     case 'rank': mainTopic = 'rank'; break
     case 'developers': mainTopic = 'developer'; break
-    default: mainTopic = 'challenge'
+    default: mainTopic = '/'
   }
 
   return (

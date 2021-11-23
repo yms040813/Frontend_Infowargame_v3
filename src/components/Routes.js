@@ -1,14 +1,20 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-
 // page import
 import ctfPloblemPage from "../pages/ctfPloblemPage";
+import MainPage from "../pages/MainPage";
+import NoticePage from "../pages/NoticePage";
 import MyPage from "../pages/MyPage";
+import EventPage from "../pages/Event";
 
 const LoggedInRoutes = () => (                  //로그인 이후 접근 가능
   <Switch>
-    <Route exact path="/" component={null} />       { /* 메인화면 */  }
+    <Route exact path="/" component={MainPage}/>       { /* 메인화면 */  }
     <Route path="/rank" component={null} />         { /* 랭킹 */ }
+    <Route path="/notice" component={NoticePage} />   { /* 공지사항 Detail */ }
+    <Route path="/event" component={EventPage} />   { /* 이벤트 Detail */ }
+    <Route path="/profile" component={null} />      { /* 유저 페이지 */ }
+    <Route path="/ctf" component={ctfPloblemPage} />          { /*ctf 문제리스트 페이지 */ }
     <Route path="/notice/:id" component={null} />   { /* 공지사항 아이디 Detail */ }
     <Route path="/profile" component={MyPage} />      { /* 유저 페이지 */ }
     <Route exact path="/ctf/:id" component={ctfPloblemPage} />{ /*ctf 문제리스트 페이지 */ }

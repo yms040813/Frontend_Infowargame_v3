@@ -38,14 +38,6 @@ const DefaultTemplete = (params) => {
           </S.SubAreaStyled>
         </S.TopicAreaStyled>
 
-<<<<<<< HEAD
-        <S.LinkStyled to='/notice'><div>NOTICE</div></S.LinkStyled>
-        <S.LinkStyled to='/event'><div>EVENT</div></S.LinkStyled>
-        <S.LinkStyled to='/rank'><div>RANK</div></S.LinkStyled>
-        <S.LinkStyled to='/profile'><div>MYPAGE</div></S.LinkStyled>
-        <S.LinkStyled to='/developers'><div>DEVELOPER</div></S.LinkStyled>
-        
-=======
         <S.LinkStyled to='/notice/1'>
           <div className={mainTopic === 'notice' ? 'btn__black' : "btn__white"}>NOTICE</div>
         </S.LinkStyled>
@@ -66,7 +58,6 @@ const DefaultTemplete = (params) => {
           <div className={mainTopic === 'developer' ? 'btn__black' : "btn__white"}>DEVELOPER</div>
         </S.LinkStyled>
 
->>>>>>> c27da4200de700b5a80db85a8b1b2db439bc048d
       </S.NavigatorAreaStyled>
 
     </S.MenuBarStyled>

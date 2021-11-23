@@ -1,6 +1,7 @@
 import useCtfProblemDetails from '../../hooks/useCtfProblemDetails'
 import * as S from './style'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const CtfDetailQ = (params) => {
   const {pwnableProblemDetails, reversingProblemDetails, webProblemDetails} = useCtfProblemDetails()
@@ -20,6 +21,7 @@ const CtfDetailQ = (params) => {
       <S.CtfProblemStyled>
         <S.ExitButtonStyled>
           <S.DefaultLinkStyled to={`/ctf/${params.page}`}>
+          <FontAwesomeIcon icon={faTimes} style={{color: 'black'}}/>
           </S.DefaultLinkStyled>
         </S.ExitButtonStyled>
         <S.ContentStyled>

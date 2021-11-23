@@ -20,7 +20,6 @@ const LoggedInRoutes = () => (
     <Route path="/rank" component={null} /> {/* 랭킹 */}
     <Route path="/notice" component={NoticePage} /> {/* 공지사항 Detail */}
     <Route path="/event" component={EventPage} /> {/* 이벤트 Detail */}
-    <Route path="/ctf" component={ctfPloblemPage} />{" "}
     {/*ctf 문제리스트 페이지 */}
     <Route path="/notice/:id" component={null} /> {/* 공지사항 아이디 Detail */}
     <Route path="/profile" component={MyPage} /> {/* 유저 페이지 */}

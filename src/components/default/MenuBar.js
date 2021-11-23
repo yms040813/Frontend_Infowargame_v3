@@ -20,7 +20,6 @@ const DefaultTemplete = (params) => {
     <S.MenuBarStyled>
       <MenuBarHeader />
       <S.NavigatorAreaStyled>
-
         <S.TopicAreaStyled>
           <S.LinkStyled to='/ctf/pwnable'>
             <div className={mainTopic === 'challenge' ? 'btn__black' : "btn__white"}>CHALLENGE</div>
@@ -37,7 +36,6 @@ const DefaultTemplete = (params) => {
             </S.DefaultLinkStyled>
           </S.SubAreaStyled>
         </S.TopicAreaStyled>
-
         <S.LinkStyled to='/notice/1'>
           <div className={mainTopic === 'notice' ? 'btn__black' : "btn__white"}>NOTICE</div>
         </S.LinkStyled>

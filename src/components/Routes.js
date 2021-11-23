@@ -17,8 +17,8 @@ const LoggedInRoutes = () => (                  //로그인 이후 접근 가능
     <Route path="/ctf" component={ctfPloblemPage} />          { /*ctf 문제리스트 페이지 */ }
     <Route path="/notice/:id" component={null} />   { /* 공지사항 아이디 Detail */ }
     <Route path="/profile" component={MyPage} />      { /* 유저 페이지 */ }
-    <Route path="/ctf" component={ctfPloblemPage} />{ /*ctf 문제리스트 페이지 */ }
-    <Route path="/ctf/:id" component={null} />      { /*ctf 문제 Detail페이지 */ }
+    <Route exact path="/ctf/:id" component={ctfPloblemPage} />{ /*ctf 문제리스트 페이지 */ }
+    <Route path="/ctf/:id/:id" component={ctfPloblemPage} />      { /*ctf 문제 Detail페이지 */ }
     <Route path="/wargame" component={null} />      { /*wargame 페이지 */ }
     <Route path="/wargame/:id" component={null} />  { /*wargame 문제사이트 */ }
     <Route path="/administration" component={null} /> { /*admin 페이지 */ }

@@ -42,6 +42,7 @@ background-color: #2C2C2C;
 border-radius: 20px;
 display: flex;
 
+
 font-size: 27px;
 line-height: 37px;
 color: #FFFFFF;

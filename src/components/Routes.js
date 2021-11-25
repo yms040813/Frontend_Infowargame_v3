@@ -6,11 +6,12 @@ import MainPage from "../pages/MainPage";
 import NoticePage from "../pages/NoticePage";
 import MyPage from "../pages/MyPage";
 import EventPage from "../pages/Event";
+import RankPage from "../pages/Rank";
 
 const LoggedInRoutes = () => (                  //로그인 이후 접근 가능
   <Switch>
     <Route exact path="/" component={MainPage}/>       { /* 메인화면 */  }
-    <Route path="/rank" component={null} />         { /* 랭킹 */ }
+    <Route path="/rank" component={RankPage} />         { /* 랭킹 */ }
     <Route path="/notice" component={NoticePage} />   { /* 공지사항 Detail */ }
     <Route path="/event" component={EventPage} />   { /* 이벤트 Detail */ }
     <Route path="/notice/:id" component={null} />   { /* 공지사항 아이디 Detail */ }

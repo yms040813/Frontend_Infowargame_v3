@@ -1,22 +1,26 @@
 import React from "react";
 import * as S from './style';
 import MenuBar from '../default/MenuBar';
+import NoticeBox from "./NoticeBox";
+import useNotice from "../../hooks/useNotice";
+
+const NoticeTemplete = () => {
+
+  // const Notices = useNotice()
+  // let Noticelist = Notices
 
 
-const NoticeTemplete = (params) => {
 	return(
 		<div className="inner-style">
-      <MenuBar page="notice" />
+      <MenuBar page="notice"/>
       <S.ProblemAreaStyled>
         <S.ProblemTopicStyled>Notice</S.ProblemTopicStyled>
-        <S.List1 />
-        <S.List2 />
-        <S.List2 />
-        <S.List2 />
-        <S.List2 />
-        <S.List2 />
+        {/* {Noticelist.map(notice => {
+          const {title, time} = notice
+          return(<NoticeBox title={title} time={time} />)
+        })} */}
         <S.NoticeAreaStyled>
-          <S.NoNoticeTextStyled>공지를 선택해주세요.</S.NoNoticeTextStyled>
+          <S.NoticeTextStyledtwo>공지를 선택해주세요.</S.NoticeTextStyledtwo>
         </S.NoticeAreaStyled>
       </S.ProblemAreaStyled>
     </div>

@@ -58,12 +58,18 @@ export const NoticeBoxStyled = styled.div`
 width: 674px;
 height: 110px;
 margin-left: 25px;
-margin-top: 60px;
+margin-top: 40px;
 background-color: #2C2C2C;
 border-radius: 20px;
 display: flex;
+position: relative;
+
+&:first-child{
+  margin-top: 60px;
+}
 
 `;
+
 
 export const QuestTextStyled = styled.div`
   font-size: 27px;
@@ -71,23 +77,11 @@ export const QuestTextStyled = styled.div`
   position: absolute;
   top: 17px;
   left: 36px;
-
-  &::after{
-    content: '';
-    background-color: white;
-    border: 1px solid white;
-    position: absolute;
-    width: 259px;
-    left: -10px;
-    top: 35px;
-  }
 `;
 
 export const QuestScoreStyled = styled.div`
   width: 77px;
   height: 27px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
   position: absolute;
   bottom: 22px;
   right: 26px;

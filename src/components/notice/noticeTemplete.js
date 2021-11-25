@@ -6,8 +6,8 @@ import useNotice from "../../hooks/useNotice";
 
 const NoticeTemplete = () => {
 
-  // const Notices = useNotice()
-  // let Noticelist = Notices
+   const {Notices} = useNotice()
+   
 
 
 	return(
@@ -15,10 +15,12 @@ const NoticeTemplete = () => {
       <MenuBar page="notice"/>
       <S.ProblemAreaStyled>
         <S.ProblemTopicStyled>Notice</S.ProblemTopicStyled>
-        {/* {Noticelist.map(notice => {
+        <div>
+        {Notices.map(notice => {
           const {title, time} = notice
           return(<NoticeBox title={title} time={time} />)
-        })} */}
+        })} 
+        </div>
         <S.NoticeAreaStyled>
           <S.NoticeTextStyledtwo>공지를 선택해주세요.</S.NoticeTextStyledtwo>
         </S.NoticeAreaStyled>

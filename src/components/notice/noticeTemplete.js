@@ -3,10 +3,10 @@ import * as S from './style';
 import MenuBar from '../default/MenuBar';
 
 
-const NoticeTemplete = () => {
+const NoticeTemplete = (params) => {
 	return(
 		<div className="inner-style">
-      <MenuBar/>
+      <MenuBar page="notice" />
       <S.ProblemAreaStyled>
         <S.ProblemTopicStyled>Notice</S.ProblemTopicStyled>
         <S.List1 />

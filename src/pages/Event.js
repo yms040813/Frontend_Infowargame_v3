@@ -1,13 +1,8 @@
 import React from "react";
 import EventTemplete from "../components/event/EventTemplete";
 
-
-
 const EventPage = () => {
-	return(
-	   <EventTemplete />
-	);
+	return <EventTemplete />
 };
-
 
 export default EventPage;

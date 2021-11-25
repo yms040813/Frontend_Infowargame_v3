@@ -16,26 +16,27 @@ import EventPage from "../pages/Event";
 const LoggedInRoutes = () => (
   //로그인 이후 접근 가능
   <Switch>
+    {/*공지, 이벤트 작성 페이지 */}
+    <Route path="/Writequest" component={AdminProblemW} />{" "}
+    {/*문제 관리 리스트 */}
+    <Route path="/adminevent" component={AdminEvent} />
     <Route exact path="/" component={MainPage} /> {/* 메인화면 */}
     <Route path="/rank" component={null} /> {/* 랭킹 */}
     <Route path="/notice" component={NoticePage} /> {/* 공지사항 Detail */}
     <Route path="/event" component={EventPage} /> {/* 이벤트 Detail */}
-    {/*ctf 문제리스트 페이지 */}
     <Route path="/notice/:id" component={null} /> {/* 공지사항 아이디 Detail */}
     <Route path="/profile" component={MyPage} /> {/* 유저 페이지 */}
-    <Route path="/ctf" component={ctfPloblemPage} />
+    <Route exact path="/ctf/:id" component={ctfPloblemPage} />
     {/*ctf 문제리스트 페이지 */}
-    <Route path="/ctf/:id" component={null} /> {/*ctf 문제 Detail페이지 */}
+    <Route path="/ctf/:id/:id" component={ctfPloblemPage} />{" "}
+    {/*ctf 문제 Detail페이지 */}
     <Route path="/wargame" component={null} /> {/*wargame 페이지 */}
     <Route path="/wargame/:id" component={null} /> {/*wargame 문제사이트 */}
     <Route path="/administration" component={null} /> {/*admin 페이지 */}
     <Route path="/notification" component={AdminNotice} />{" "}
     {/*공지, 이벤트 작성 페이지 */}
-    <Route path="/Writequest" component={AdminProblemW} />{" "}
-    {/*문제 관리 리스트 */}
-    <Route path="/quest" component={AdminProblem} /> {/*문제 작성 */}
+    <Route path="/quest" component={AdminProblem} /> {/*문제 관리 리스트 */}
     <Route path="/users" component={AdminUser} /> {/*회원 관리 리스트 */}
-    <Route path="/adminevent" component={AdminEvent} />
     <Route path="/developers" component={null} /> {/* 개발자 리스트 */}
     <Redirect from="*" to="/" /> {/*리다이렉션 */}
   </Switch>

@@ -13,14 +13,13 @@ const DefaultTemplete = (params) => {
     case 'profile': mainTopic = 'mypage'; break
     case 'rank': mainTopic = 'rank'; break
     case 'developers': mainTopic = 'developer'; break
-    default: mainTopic = 'challenge'
+    default: mainTopic = '/'
   }
 
   return (
     <S.MenuBarStyled>
       <MenuBarHeader />
       <S.NavigatorAreaStyled>
-
         <S.TopicAreaStyled>
           <S.LinkStyled to='/ctf/pwnable'>
             <div className={mainTopic === 'challenge' ? 'btn__black' : "btn__white"}>CHALLENGE</div>
@@ -37,7 +36,6 @@ const DefaultTemplete = (params) => {
             </S.DefaultLinkStyled>
           </S.SubAreaStyled>
         </S.TopicAreaStyled>
-
         <S.LinkStyled to='/notice/1'>
           <div className={mainTopic === 'notice' ? 'btn__black' : "btn__white"}>NOTICE</div>
         </S.LinkStyled>

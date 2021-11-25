@@ -35,7 +35,10 @@ const LoggedInRoutes = () => (
     <Route path="/administration" component={null} /> {/*admin 페이지 */}
     <Route path="/notification" component={AdminNotice} />{" "}
     {/*공지, 이벤트 작성 페이지 */}
-    <Route path="/quest" component={AdminProblem} /> {/*문제 관리 리스트 */}
+    <Route exact path="/Adminctf/:id" component={AdminProblem} />{" "}
+    {/*문제 관리 리스트 */}
+    <Route path="/Adminctf/:id/:id" component={AdminProblem} />{" "}
+    {/*문제 관리 detail 리스트 */}
     <Route path="/users" component={AdminUser} /> {/*회원 관리 리스트 */}
     <Route path="/developers" component={null} /> {/* 개발자 리스트 */}
     <Redirect from="*" to="/" /> {/*리다이렉션 */}

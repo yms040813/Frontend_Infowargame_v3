@@ -10,11 +10,12 @@ const BackgroundStyle = styled.div`
   position: relative;
 `;
 
-const AdminProblem = () => {
+const AdminProblem = ({ match }) => {
+  console.log(match.params);
   return (
     <BackgroundStyle>
       <CtfProviders>
-        <CtfTemplete />
+        <CtfTemplete id={match} />
       </CtfProviders>
     </BackgroundStyle>
   );

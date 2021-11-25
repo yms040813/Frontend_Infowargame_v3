@@ -24,7 +24,7 @@ const WhiteBox = styled.div`
     color: black;
     position: absolute;
     text-align: center;
-    top: 33px;
+    top: 30px;
     left: 110px;
     font-family: Noto Sans KR;
     font-size: 25px;

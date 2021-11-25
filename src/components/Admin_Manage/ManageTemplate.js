@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MenuBarBox from "./MenuBarBox";
+import MenuBar from "./MenuBar";
 import { Link } from "react-router-dom";
 
 const MenuBarStyled = styled.div`
@@ -47,7 +47,7 @@ const MainTopicStyled = styled.div`
 const DefaultTemplete = () => {
   return (
     <MenuBarStyled>
-      <MenuBarBox />
+      <MenuBar />
       <NavigatorAreaStyled>
         <MainTopicStyled>CHALENGE</MainTopicStyled>
         <MainTopicStyled>NOTICE</MainTopicStyled>

@@ -23,12 +23,12 @@ const WhiteBox = styled.div`
     color: black;
     position: absolute;
     text-align: center;
-    top: 33px;
+    top: 60px;
     left: 110px;
     font-family: Noto Sans KR;
     font-size: 25px;
     @media (max-width: 1100px) {
-      top: 50px;
+      top: 65px;
       font-size: 15px;
     }
     @media (max-width: 890px) {
@@ -42,12 +42,12 @@ const WhiteBox = styled.div`
     color: black;
     position: absolute;
     text-align: center;
-    top: 138px;
+    top: 170px;
     left: 110px;
     font-family: Noto Sans KR;
     font-size: 25px;
     @media (max-width: 1100px) {
-      top: 155px;
+      top: 175px;
       font-size: 15px;
     }
     @media (max-width: 890px) {
@@ -163,7 +163,7 @@ const SelectButton = styled(Button)`
   font-weight: 900px;
   font-size: 20px;
   line-height: 29px;
-  
+
   border: 1px solid #000;
   box-sizing: border-box;
   border-radius: 20px;

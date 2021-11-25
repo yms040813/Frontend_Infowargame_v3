@@ -9,7 +9,6 @@ const NoticeTemplete = () => {
    const {Notices} = useNotice()
    
 
-
 	return(
 		<div className="inner-style">
       <MenuBar page="notice"/>

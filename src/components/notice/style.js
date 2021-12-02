@@ -71,7 +71,7 @@ position: relative;
 `;
 
 
-export const QuestTextStyled = styled.div`
+export const NoticeTitleStyled = styled.div`
   font-size: 27px;
   color: white;
   position: absolute;
@@ -79,8 +79,8 @@ export const QuestTextStyled = styled.div`
   left: 36px;
 `;
 
-export const QuestScoreStyled = styled.div`
-  width: 77px;
+export const NoticeTimeStyled = styled.div`
+  width: 177px;
   height: 27px;
   position: absolute;
   bottom: 22px;

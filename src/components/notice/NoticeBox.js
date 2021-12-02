@@ -4,8 +4,8 @@ import * as S from './style'
 const NoticeBox = (props) => {
   return (
     <S.NoticeBoxStyled>
-      <S.QuestTextStyled>{props.title}</S.QuestTextStyled>
-      <S.QuestScoreStyled>{props.time}</S.QuestScoreStyled>
+      <S.NoticeTitleStyled>{props.title}</S.NoticeTitleStyled>
+      <S.NoticeTimeStyled>{props.time}</S.NoticeTimeStyled>
     </S.NoticeBoxStyled>
   );
 }

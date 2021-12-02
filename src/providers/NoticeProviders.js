@@ -1,34 +1,34 @@
 import { useState } from 'react'
 import NoticeContext from '../context/NoticeContext'
-
+import moment from 'moment';
 
 const NoticeProviders = ({children}) => {
-	const date = new Date();
+	const nowTime = moment().format('YYYY-MM-DD | HH:mm');
 	const [Notices, setNotices] = useState([
 	  {
 	    id: 1,
 	    title: "버퍼 오버플로우 1",
-	    time: date.getMinutes()
+	    time: nowTime
 	  },
 	  { id: 2,
 	    title: "버퍼 오버플로우 1",
-	    time: date.getHours()
+	    time: nowTime
 	  },
 	  { id: 3,
 	    title: "버퍼 오버플로우 1",
-	    time: date.getHours()
+	    time: nowTime
 	  },
 	  { id: 4,
 	    title: "버퍼 오버플로우 1",
-	    time: date.getHours()
+	    time: nowTime
 	  },
 	  { id: 5,
 	    title: "버퍼 오버플로우 1",
-	    time: date.getHours()
+	    time: nowTime
 	  },
 	  { id: 6,
 	    title: "버퍼 오버플로우 1",
-	    time: date.getHours()
+	    time: nowTime
 	  },
 	])
 

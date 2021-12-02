@@ -33,24 +33,6 @@ export const ProblemTopicStyled = styled.div`
 
   color: #2C2C2C;
 `;
-export const List1 = styled.div`
-width: 674px;
-height: 110px;
-margin-left: 25px;
-margin-top: 60px;
-background-color: #2C2C2C;
-border-radius: 20px;
-display: flex;
-
-
-font-size: 27px;
-line-height: 37px;
-color: #FFFFFF;
-text-align: center;
-`;
-export const List2 = styled(List1)`
-margin-top: 40px;
-`;
 export const NoticeAreaStyled = styled.div`
   margin: 0;
   padding: 0;
@@ -65,9 +47,48 @@ export const NoticeAreaStyled = styled.div`
   border-radius: 30px;
   box-sizing: border-box;
 `;
-export const NoNoticeTextStyled = styled.div`
+export const NoticeTextStyledtwo = styled.div`
   text-align: center;
   font-size: 27px;
   line-height: 39px;
   margin-top: 397px;
+`;
+
+export const NoticeBoxStyled = styled.div`
+width: 674px;
+height: 110px;
+margin-left: 25px;
+margin-top: 40px;
+background-color: #2C2C2C;
+border-radius: 20px;
+display: flex;
+position: relative;
+
+&:first-child{
+  margin-top: 60px;
+}
+
+`;
+
+
+export const NoticeTitleStyled = styled.div`
+  font-size: 27px;
+  color: white;
+  position: absolute;
+  top: 17px;
+  left: 36px;
+`;
+
+export const NoticeTimeStyled = styled.div`
+  width: 177px;
+  height: 27px;
+  position: absolute;
+  bottom: 22px;
+  right: 26px;
+
+  font-weight: normal;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
 `;

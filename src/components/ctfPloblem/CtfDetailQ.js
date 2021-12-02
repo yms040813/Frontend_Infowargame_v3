@@ -21,7 +21,7 @@ const CtfDetailQ = (params) => {
       <S.CtfProblemStyled>
         <S.ExitButtonStyled>
           <S.DefaultLinkStyled to={`/ctf/${params.page}`}>
-          <FontAwesomeIcon icon={faTimes} style={{color: 'black'}}/>
+            <FontAwesomeIcon icon={faTimes} style={{color: 'black'}}/>
           </S.DefaultLinkStyled>
         </S.ExitButtonStyled>
         <S.ContentStyled>

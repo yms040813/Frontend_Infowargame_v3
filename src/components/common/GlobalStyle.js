@@ -1,6 +1,4 @@
 import { createGlobalStyle } from "styled-components"
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {

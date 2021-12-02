@@ -4,7 +4,7 @@ import MenuBar from "../default/MenuBar";
 import ProblemBox from "./ProblemBox";
 import useCtfProblems from "../../hooks/useCtfProblems";
 import CtfDetailQ from "./CtfDetailQ";
-import * as S from './style'
+import * as S from './style';
 
 const CtfTemplete = (match) => {
   const { pwnableProblems, reversingProblems, webProblems } = useCtfProblems()

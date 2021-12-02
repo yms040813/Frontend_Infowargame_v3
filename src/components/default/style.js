@@ -42,6 +42,43 @@ export const LinkStyled = styled(DefaultLinkStyled)`
   }
 `
 
+export const ChallengeLinkStyled = styled(DefaultLinkStyled)`
+  width: 291px;
+  height: 56px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 7px;
+
+  color: #2c2c2c;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 51px;
+
+  transition: .1s;
+
+  display: block;
+
+  &:first-child{
+    margin-top: 0;
+  }
+
+  div {
+    border-radius: 10px;
+    height: 56px;
+  }
+
+  .btn__black, .btn__white:hover{
+    background-color: #2c2c2c;
+    color: #fff;
+  }
+
+  .btn__white, .btn__black:hover{
+    background-color: #fff;
+    color: #2c2c2c;
+  }
+`
+
 // In the menu bar, the area where the logo and logout button are located.
 export const HeaderStyled = styled.div`
   width: 303px;
@@ -134,8 +171,10 @@ export const TopicAreaStyled = styled.div`
 
 // 
 export const SubAreaStyled = styled.div`
-  height: auto;
-
+  ${props => props.click && `
+    height: 0;
+  `}
+  
   div {
     width: 235px;
     height: 56px;

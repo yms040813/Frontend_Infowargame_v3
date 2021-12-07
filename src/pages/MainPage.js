@@ -1,6 +1,6 @@
 import React from "react";
 import MainTemplete from "../components/main/main";
-import Notice from "../providers/MainProviders";
+import Notice from "../providers/MainProvider";
 
 const MainPage = () => {
   return (

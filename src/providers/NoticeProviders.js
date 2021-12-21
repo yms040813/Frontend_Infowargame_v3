@@ -11,23 +11,23 @@ const NoticeProviders = ({children}) => {
 	    time: nowTime
 	  },
 	  { id: 2,
-	    title: "버퍼 오버플로우 1",
+	    title: "버퍼 오버플로우 2",
 	    time: nowTime
 	  },
 	  { id: 3,
-	    title: "버퍼 오버플로우 1",
+	    title: "버퍼 오버플로우 3",
 	    time: nowTime
 	  },
 	  { id: 4,
-	    title: "버퍼 오버플로우 1",
+	    title: "버퍼 오버플로우 4",
 	    time: nowTime
 	  },
 	  { id: 5,
-	    title: "버퍼 오버플로우 1",
+	    title: "버퍼 오버플로우 5",
 	    time: nowTime
 	  },
 	  { id: 6,
-	    title: "버퍼 오버플로우 1",
+	    title: "버퍼 오버플로우 6",
 	    time: nowTime
 	  },
 	])
